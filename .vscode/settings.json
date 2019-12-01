@@ -5,5 +5,14 @@
     },
     "[typescript]": {
         "editor.formatOnSave": true
-    }
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html",
+        "typescript",
+        "typescriptreact"
+    ],
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true
 }

@@ -1,3 +1,5 @@
-var aa = 'aa';
+const aa = 'aa';
 
-let bb = 'aa';
+const bb = 'aa';
+console.log(bb);
+function test() {}
