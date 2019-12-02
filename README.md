@@ -54,10 +54,10 @@ Now comes the fun part! Create a file called main.ts and add the following code
 var aa = "This should be in single quotes"
 ```
 
-After you save the file, autoformatting should kick in and the code should look like
+After you save the file, autoformatting should kick in and the code should look like (and notice the added semi-colon). You can see your `.prettierrc.json` file and rules at work here!
 
 ```
-var aa = 'aa';
+var aa = 'This should be in single quotes';
 ```
 
 ## 6. Install eslint
