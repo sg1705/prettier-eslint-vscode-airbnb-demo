@@ -12,9 +12,14 @@ Prettier is a code formatter and a VSCode extension. It allows teams to establis
 
 ![Prettier search in VSCode](docs/prettier-extension.png)
 
-3. Configure VSCode for formatting on save.
-   In Workspace setting, check on "Format on Save" . This creates a file in .vscode/settings.json
-   Add the following to the file
+## 3. Configure VSCode
+
+In Workspace setting, check on "Format on Save" . This creates a file in .vscode/settings.json
+Add the following to the file
+
+![Configure editor](docs/configure-editor.png)
+
+The file created in `.vscode/settings.json` contains the following settings. Make sure to include TypeScript specific settings.
 
 ```
     "editor.formatOnSave": true,
