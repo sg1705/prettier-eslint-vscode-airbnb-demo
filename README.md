@@ -31,7 +31,9 @@ The file created in `.vscode/settings.json` contains the following settings. Mak
     }
 ```
 
-5. Create prettier config file called .prettierrc.json and add the following in the file
+## 4. Create prettier config file called `.prettierrc.json`
+
+Prettier configuration can exist in JSON or JavaScript. I prefer JSON. Add the following to your `.prettierrc.json` .
 
 ```
 {
@@ -44,7 +46,7 @@ The file created in `.vscode/settings.json` contains the following settings. Mak
 
 ```
 
-5. Install eslint
+## 5. Install eslint
 
 ```
 npm install --save-dev eslint
