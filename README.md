@@ -10,7 +10,7 @@ npm install --save-dev prettier
 
 Prettier is a code formatter and a VSCode extension. It allows teams to establish code formatting rules, and then it enforces those rules.
 
-![Prettier search in VSCode](docs/prettier-extension-install.png){:width="150px"}
+![Prettier search in VSCode](docs/prettier-extension.png)
 
 3. Configure VSCode for formatting on save.
    In Workspace setting, check on "Format on Save" . This creates a file in .vscode/settings.json
