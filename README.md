@@ -106,7 +106,7 @@ You should see the following errors
 
 ![ESLint search in VSCode](docs/eslint-extension.png)
 
-## 10. Configure ESLint in 'settings.json'
+## 10. Configure ESLint in `settings.json`
 
 After installing ESLint extension in VSCode, add the following in your `.vscode/settings.json`
 
@@ -122,13 +122,19 @@ After installing ESLint extension in VSCode, add the following in your `.vscode/
     "eslint.alwaysShowStatus": true
 ```
 
-## 7. Install config that prevents rules conflict between eslint and prettier
+## 11. Test ESLint in VSCode
+
+After enabling `eslint.validate` and `eslint.alwaysShowStatus`, we should see ESLint errors on the status bar in VSCode. See screenshot below:
+
+![ESLint in status bar](docs/eslint-status.png)
+
+## 12. Install config that prevents rules conflict between eslint and prettier
 
 ```
 npm install --save-dev eslint-config-prettier
 ```
 
-## 8. Install eslint plugin to integrate prettier rules into eslint
+## 12. Install eslint plugin to integrate prettier rules into eslint
 
 ```
 npm install --save-dev eslint-plugin-prettier
