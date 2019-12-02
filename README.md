@@ -128,25 +128,27 @@ After enabling `eslint.validate` and `eslint.alwaysShowStatus`, we should see ES
 
 ![ESLint in status bar](docs/eslint-status.png)
 
-## 12. Install @typescript-eslint/parser
+## 12. Install @typescript-eslint/eslint-plugin
+
+```
+npm i @typescript-eslint/eslint-plugin --save-dev
+```
+
+## 13. Install `@typescript-eslint/parser`
 
 ```
 npm install @typescript-eslint/parser --save-dev
 ```
 
-## 13. Configure .eslintrc to use @typescript-eslint/parser parser
+## 14. Configure `.eslintrc` to use `@typescript-eslint/parser parser`
+
+Modify the parser and plugin to use these packages.
 
 ```
 {
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"]
 }
-```
-
-## 14. Install @typescript-eslint/eslint-plugin
-
-```
-npm i @typescript-eslint/eslint-plugin --save-dev
 ```
 
 ## 15. Install config that prevents rules conflict between eslint and prettier
