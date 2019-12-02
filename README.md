@@ -102,6 +102,26 @@ You should see the following errors
 
 ```
 
+## 9. Install ESLint extension in VSCode
+
+![ESLint search in VSCode](docs/eslint-extension.png)
+
+## 10. Configure ESLint in 'settings.json'
+
+After installing ESLint extension in VSCode, add the following in your `.vscode/settings.json`
+
+```
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html",
+        "typescript",
+        "typescriptreact"
+    ],
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true
+```
+
 ## 7. Install config that prevents rules conflict between eslint and prettier
 
 ```
