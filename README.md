@@ -182,3 +182,13 @@ npm install --save-dev eslint-plugin-prettier
     }
 }
 ```
+
+## 18. Install `airbnb` style guide
+
+```
+npx install-peerdeps --dev eslint-config-airbnb
+```
+
+## 19. Configure `.eslintrc.json`
+
+Add `"extends": "airbnb"` to the `.eslintrc.json` file.
