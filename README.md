@@ -192,3 +192,13 @@ npx install-peerdeps --dev eslint-config-airbnb
 ## 19. Configure `.eslintrc.json`
 
 Add `"extends": "airbnb"` to the `.eslintrc.json` file.
+
+```
+"extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
+        "airbnb"
+    ],
+```
