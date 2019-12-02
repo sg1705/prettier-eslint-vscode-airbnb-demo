@@ -1,6 +1,6 @@
 # Configuring Prettier, ESLint and AirBnb style for TypeScript projects in VSCode
 
-## 1. Install prettier npm package
+## 1. Install `prettier` npm package
 
 ```
 npm install --save-dev prettier
