@@ -1,15 +1,15 @@
-# Configuring Prettier, ESLint and AirBnb style for TypeScript in VSCode
+# Configuring Prettier, ESLint and AirBnb style for TypeScript projects in VSCode
 
-1. Turn on the Prettier extension in VSCode
-   Prettier is a code formatter and a VSCode extension. It allows teams to establish code formatting rules, and then it enforces those rules.
-
-2. Install prettier npm package
+## 1. Install prettier npm package
 
 ```
 npm install --save-dev prettier
 ```
 
-3. Configure VSCode for formatting on save.
+2. Turn on the Prettier extension in VSCode
+   Prettier is a code formatter and a VSCode extension. It allows teams to establish code formatting rules, and then it enforces those rules.
+
+3) Configure VSCode for formatting on save.
    In Workspace setting, check on "Format on Save" . This creates a file in .vscode/settings.json
    Add the following to the file
 
