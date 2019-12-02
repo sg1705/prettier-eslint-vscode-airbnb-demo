@@ -46,7 +46,21 @@ Prettier configuration can exist in JSON or JavaScript. I prefer JSON. Add the f
 
 ```
 
-## 5. Install eslint
+## 5. Test Prettier
+
+Now comes the fun part! Create a file called main.ts and add the following code
+
+```
+var aa = "This should be in single quotes"
+```
+
+After you save the file, autoformatting should kick in and the code should look like
+
+```
+var aa = 'aa';
+```
+
+## 6. Install eslint
 
 ```
 npm install --save-dev eslint
