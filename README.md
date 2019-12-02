@@ -60,25 +60,55 @@ After you save the file, autoformatting should kick in and the code should look 
 var aa = 'This should be in single quotes';
 ```
 
-## 6. Install eslint
+## 6. Install `eslint`
+
+[ESLint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
 
 ```
-npm install --save-dev eslint
+npm install eslint --save-dev
 ```
 
-6. Generate eslintrc.json config file
+## 7. Generate `.eslintrc.json` config file
+
+ESLint configuration can exist in JSON or JavaScript. I prefer JSON. There's an easy way to generate default configuration.
 
 ```
 ./node_modules/eslint/bin/eslint.js --init
 ```
 
-7. Install config that prevents rules conflict between eslint and prettier
+## 8. Test `eslint`
+
+Create a file called main.ts, and add the following code. This code breaks a few rules as recommended by default eslint rules.
+
+```
+var aa = "bb";
+
+function main() {}
+```
+
+Execute `eslint` and generate errors
+
+```
+./node_modules/eslint/bin/eslint.js main.ts
+```
+
+You should see the following errors
+
+```
+  1:5   error  'aa' is assigned a value but never used  no-unused-vars
+  3:10  error  'main' is defined but never used         no-unused-vars
+
+✖ 2 problems (2 errors, 0 warnings)
+
+```
+
+## 7. Install config that prevents rules conflict between eslint and prettier
 
 ```
 npm install --save-dev eslint-config-prettier
 ```
 
-8. Install eslint plugin to integrate prettier rules into eslint
+## 8. Install eslint plugin to integrate prettier rules into eslint
 
 ```
 npm install --save-dev eslint-plugin-prettier
