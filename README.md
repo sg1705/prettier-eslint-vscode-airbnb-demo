@@ -1,11 +1,11 @@
 # Configuring Prettier, ESLint and Airbnb style for TypeScript projects in VSCode
 
-TypeScript projects used to use TSLint. TSLint has been deprecated in favor of ESLint (details [here](https://medium.com/palantir/tslint-in-2019-1a144c2317a9)). There are quite a few requirements of TypeScript developers when it comes to code style, linting and developer tooling.
+TypeScript projects used to use TSLint. TSLint has been deprecated in favor of ESLint (details [here](https://medium.com/palantir/tslint-in-2019-1a144c2317a9)). There are quite a few requirements from TypeScript developers when it comes to code style, linting and developer tooling.
 
-1. ESLint is linter for JavaScript. Plugins and parsers have been written to extend ESLint to support TypeScript.
-2. TypeScript developers mostly use VSCode. Theywant linter support in VSCode. This means highlighting errors right in VSCode itself.
-3. Developers also use Prettier for code style checking. There can be rules conflict between recommended ESLint rules, TypeScript rules and Prettier rules.
-4. Developers also want auto correction upon saving in VSCode.
+1. ESLint is linter for JavaScript. Plugins and parsers have been written to extend ESLint to support TypeScript. Any ESLint configuration requires using these plugins and parsers for TypeScript support.
+2. TypeScript developers mostly use VSCode. They want linter support in VSCode. This means highlighting warnings and errors right in VSCode itself. This requires installing ESLint extension for VSCode.
+3. Developers also use Prettier for code style checking. There can be rules conflict between recommended ESLint rules, TypeScript rules and Prettier rules. ESLint config packages which prevent rule conflict need to be installed.
+4. Developers also want auto correction upon saving in VSCode. This is done by modifying settings.json file.
 5. Google, Airbnb and others have created comprehensive style guides for JavaScript. Developers want to use those rules since these rules are very well thought through and good for many projects.
 
 ## 1. Install `prettier` npm package
